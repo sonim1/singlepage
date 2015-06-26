@@ -1,10 +1,12 @@
 // server.js
 
 // modules =================================================
+var debug = require('debug')('jb-test');
 var express        = require('express');
 var app            = express();
 var bodyParser     = require('body-parser');
 var methodOverride = require('method-override');
+
 
 // configuration ===========================================
     
@@ -43,7 +45,7 @@ app.listen(port);
 
 // shoutout to the user                     
 console.log('Magic happens on port ' + port);
-
+debug('Express server listening on port ' + port);
 // expose app           
 exports = module.exports = app;                         
 

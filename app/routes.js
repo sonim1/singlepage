@@ -24,6 +24,10 @@ var Nerd = require('./models/nerd');
 
         // route to handle creating goes here (app.post)
         // route to handle delete goes here (app.delete)
+        app.get('/test', function(req, res) {
+            res.sendfile('./public/views/angulartest/index.html'); // load our public/index.html file
+        });
+
 
         // frontend routes =========================================================
         // route to handle all angular requests
