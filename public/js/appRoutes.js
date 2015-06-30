@@ -12,12 +12,6 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
         .when('/nerds', {
             templateUrl: 'views/nerd.html',
             controller: 'NerdController'
-        })
-
-        // nerds page that will use the NerdController
-        .when('/test', {
-            templateUrl: 'views/angulartest/content.html',
-            controller: 'TestController'
         });
 
     $locationProvider.html5Mode(true);
