@@ -19,7 +19,7 @@ angular.module('TestCtrl', []).controller('TestController', function($scope, $ht
 			});
 
 			$scope.newTodo = null;
-		}
+		} 
 		else
 		{
 			alert('할일을 입력해주세요!');
